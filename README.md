@@ -26,7 +26,7 @@ const net = new SecureVpc(this, 'Net');
 
 - short-lived credentials through OIDC, with the native IAM provider (no helper Lambda)
 - trusts exactly one repository and one branch; wildcards are rejected
-- one-hour sessions; the role starts without permissions, grant only what the pipeline needs
+- one-hour sessions; the role starts without permissions; grant only what the pipeline needs
 
 ```ts
 import { GitHubOidcDeployRole } from 'cdk-secure-baseline';
