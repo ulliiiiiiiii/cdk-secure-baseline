@@ -1,0 +1,36 @@
+{
+  "name": "cdk-secure-baseline",
+  "version": "0.1.0",
+  "description": "Secure-by-default AWS CDK building blocks for network, keyless CI/CD and least privilege, checked by cdk-nag.",
+  "license": "Apache-2.0",
+  "author": "ulliiiiiiiii",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ulliiiiiiiii/cdk-secure-baseline.git"
+  },
+  "homepage": "https://github.com/ulliiiiiiiii/cdk-secure-baseline#readme",
+  "bugs": {
+    "url": "https://github.com/ulliiiiiiiii/cdk-secure-baseline/issues"
+  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*.js",
+    "lib/**/*.d.ts"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "check": "tsc --noEmit && jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^26.6.2",
+    "aws-cdk-lib": "^2.270.0",
+    "cdk-nag": "^3.0.2",
+    "constructs": "^10.8.1",
+    "jest": "^30.5.2",
+    "ts-jest": "^29.4.13",
+    "typescript": "^5.9.3"
+  }
+}
